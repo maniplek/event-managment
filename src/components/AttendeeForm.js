@@ -52,8 +52,8 @@ const AttendeeForm = () => {
 
 
   return (
-    <div  className='flex flex-col items-center justify-center gap-9 m-9'>
-        <form onSubmit={handleSubmit} className='flex flex-col self-center p-5'>
+    <div  className='flex flex-col items-center justify-center gap-9 m-9  '>
+        <form onSubmit={handleSubmit} className='flex flex-col self-center p-5 '>
             <input className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' type='text' name='name' onChange={handleChange} id='name' placeholder='ENTER YOUR NAME'/><br/>
             <input className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' type='text' name='surname' onChange={handleChange} id='surname' placeholder='ENTER YOUR Surname'/><br/>
             <input className='appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500' type='text' name='telephone' onChange={handleChange} id='telephone' placeholder='PHONE NUMBER'/><br/>
