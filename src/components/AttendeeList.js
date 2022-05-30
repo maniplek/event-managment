@@ -7,7 +7,7 @@ const AttendeeList = () => {
     const confirmedAttendees = allAttendees.filter((attendee)=> attendee.status === 'Confirmed');
     const deniedAttendees = allAttendees.filter((attendee)=> attendee.status === 'Denied');
     return (
-        <section className='flex flex-col p-3 shadow-lg '>
+        <section className='flex flex-col p-3 '>
             <div className='self-end'>
               
             <span className="text-sm font-bold inline-block py-1 px-2 uppercase rounded text-green-600 bg-green-200 uppercase last:mr-0 mr-1">
