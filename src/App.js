@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import AttendeeDetail from "./components/AttendeeDetail";
 import AttendeeForm from "./components/AttendeeForm";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/Add-Attendee" element={<AttendeeForm/>}/>
         <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/attendee/:id" element={<AttendeeDetail/>}/>
       </Routes>
     </div>
   );

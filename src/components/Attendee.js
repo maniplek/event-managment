@@ -1,5 +1,7 @@
 import { useDispatch } from "react-redux"
 import { deleteAttendee } from "../redux/actions/Actions";
+import { Link } from 'react-router-dom'
+
 
 const Attendee = ({name,status,email, id,surname,telephone }) => {
     const dispatch = useDispatch();
@@ -8,7 +10,7 @@ const Attendee = ({name,status,email, id,surname,telephone }) => {
     }
 
     return (
-    <div className="flex justify-between p-1 gap-6">
+    <Link to={`/attendee/${id}`} className="flex justify-between p-1 gap-6">
         
         <h3 className="">{name}</h3>
         <div>
@@ -57,7 +59,7 @@ const Attendee = ({name,status,email, id,surname,telephone }) => {
        
         </div>
         
-    </div>
+    </Link>
   )
 }
 
